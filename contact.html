@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <footer>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Perfil Pessoal</a></li>
+            <li><a href="hobbies.html">Hobbies e Objetivos</a></li>
+            <li><a href="project.html">Projetos</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </ul>
+    </footer>
+
+    <div class="section">
+        <h2>Fale comigo.</h2>
+        <p><br></p>
+        <div class="contact-box">
+            <p>Nome Completo: <input type="text" id="nome" placeholder="Seu Nome"></p>
+            <p>Número de Celular: <input type="text" id="numero" placeholder="Seu Número"></p>
+            <p>Email: <input type="email" id="email" placeholder="seu-email@example.com"></p>
+            <p>Descrição: <textarea id="descricao" placeholder="Deixe sua opinião sobre meus projetos"></textarea></p>
+            <button onclick="enviarMensagem()">Enviar mensagem </button>
+        </div>
+    </div>
+
+    <script>
+        function enviarMensagem() {
+            const nome = document.getElementById('nome').value;
+            const numero = document.getElementById('numero').value;
+            const email = document.getElementById('email').value;
+            const descricao = document.getElementById('descricao').value;
+
+            if (nome && numero && email && descricao) {
+                alert(`Mensagem enviada:\nNome: ${nome}\nNúmero: ${numero}\nEmail: ${email}\nDescrição: ${descricao}`);
+
+                document.getElementById('nome').value = '';
+                document.getElementById('numero').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('descricao').value = '';
+            } else {
+                alert('Por favor, preencha todos os campos antes de enviar.');
+            }
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

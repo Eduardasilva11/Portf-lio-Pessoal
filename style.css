@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #1a1a1a; 
+    background-image: url(fundo.avif);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    color: #f1f1f1; 
+    
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ff5733; /* Cor do hover */
+}
+
+.section {
+    padding: 80px 20px 20px 20px; 
+    animation: fadeIn 0.5s ease-in;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}  
+i {
+    color: #fff;
+    font-size: 30px;
+}
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.description-box {
+    border: 2px solid rgb(241, 8, 8);
+    background-color: #000000bb;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.message-box {
+    border: 2px solid rgb(247, 247, 247);
+    background-color: #000000bb;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.red-line {
+    border: 0;
+    height: 1px;
+    background-color: red;
+    margin: 20px 0;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.hobby-box,
+.project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobby{
+    background-color: #000000bb; 
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+.project {
+    transition: transform 0.3s; 
+}
+
+.btn-social {
+    transition: .2s;
+}
+.btn-social:hover {
+    transform: scale(1.9);
+}
+
+.hobby:hover,
+.project:hover {
+    transform: scale(1.05); 
+}
+
+.hobby-pic{
+    width: 80px;
+    height: 80px;
+}
+.project-pic {
+    width: 560px; 
+    height: 200px;
+    transition: transform 0.3s;
+}
+
+.hobby-pic:hover,
+.project-pic:hover {
+    transform: scale(1.2); 
+}
+
+.contact-box {
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+button {
+    background-color: #fffefe; 
+    color: rgb(2, 2, 2); 
+    margin-top: 10px; 
+    text-align: center;
+    display: inline-block; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+button:hover {
+    background-color: #51c4e7; 
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #fff;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
